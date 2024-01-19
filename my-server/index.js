@@ -95,6 +95,16 @@ async function run() {
       res.send(result);
     })
 
+    //get one furniture data
+
+    app.get("/furniture/:id",async(req, res) =>{
+      const id = req.params.id;
+      const filter = { _id: new ObjectId(id)};
+      const result = await furnitureCollections.findOne(filter);
+      res.send(result);
+
+    });
+
 
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });

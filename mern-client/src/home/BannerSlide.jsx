@@ -31,15 +31,15 @@ const BannerSlide = () => {
         className="mySwiper"
       >
         
-        <SwiperSlide><img class="sm:w-200" src='src\assets\slideImages\1 (1).jpg'></img></SwiperSlide>
-        <SwiperSlide><img class="sm:w-200" src='src/assets/slideImages/bed.jpg'></img></SwiperSlide>
-        <SwiperSlide><img class="sm:w-200" src='src/assets/slideImages/71wuqXT4ZDL._AC_UF894,1000_QL80_.jpg'></img></SwiperSlide>
-        <SwiperSlide><img class="sm:w-200" src='src/assets/slideImages/1.jpg'></img></SwiperSlide>
-        <SwiperSlide><img class="sm:w-200" src='src/assets/slideImages/81x9tv3UufL.jpg'></img></SwiperSlide>
-        <SwiperSlide><img class="sm:w-200" src='src/assets/slideImages/Teal-WIndows-Home-Page-Windows-0002.jpg'></img></SwiperSlide>
-        <SwiperSlide><img class="sm:w-200" src='src/assets/slideImages/Glenview-Haus-Custom-Doors-and-Wine-Cellars-Showroom-01.jpg'></img></SwiperSlide>
-        <SwiperSlide><img class="sm:w-200" src='src/assets/slideImages/double-pedestal-dressing-table-old-wood.jpg'></img></SwiperSlide>
-        <SwiperSlide><img class="sm:w-200" src='src/assets/slideImages/cubboard.jpg'></img></SwiperSlide>
+        <SwiperSlide><img src='src\assets\slideImages\1 (1).jpg'></img></SwiperSlide>
+        <SwiperSlide><img src='src/assets/slideImages/bed.jpg'></img></SwiperSlide>
+        <SwiperSlide><img  src='src/assets/slideImages/71wuqXT4ZDL._AC_UF894,1000_QL80_.jpg'></img></SwiperSlide>
+        <SwiperSlide><img  src='src/assets/slideImages/1.jpg'></img></SwiperSlide>
+        <SwiperSlide><img  src='src/assets/slideImages/81x9tv3UufL.jpg'></img></SwiperSlide>
+        <SwiperSlide><img  src='src/assets/slideImages/Teal-WIndows-Home-Page-Windows-0002.jpg'></img></SwiperSlide>
+        <SwiperSlide><img src='src/assets/slideImages/Glenview-Haus-Custom-Doors-and-Wine-Cellars-Showroom-01.jpg'></img></SwiperSlide>
+        <SwiperSlide><img  src='src/assets/slideImages/double-pedestal-dressing-table-old-wood.jpg'></img></SwiperSlide>
+        <SwiperSlide><img  src='src/assets/slideImages/cubboard.jpg'></img></SwiperSlide>
       </Swiper>
        
     </div>

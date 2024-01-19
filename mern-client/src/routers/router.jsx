@@ -7,6 +7,7 @@ import Home from "../home/home";
 import Shop from "../shop/Shop";
 import About from "../components/About";
 import Blog from "../components/Blog";
+import SingleFurniture from "../shop/SingleFurniture";
 
   const router = createBrowserRouter([
     {
@@ -34,6 +35,12 @@ import Blog from "../components/Blog";
             path: "/blog",
             element: <Blog/>
 
+        },
+
+        {
+          path: "/furniture/:id",
+          element: <SingleFurniture/>,
+          loader: ({params}) => fetch(`http://localhost:5000/furniture/${params.id}`)
         }
 
       ]
