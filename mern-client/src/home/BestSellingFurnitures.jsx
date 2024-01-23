@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import FurnitureCards from '../components/FurnitureCards';
 
-const FavouriteFurnitures = () => {
+const BestSellingFurnitures = () => {
     const [ furniture, setFurniture] = useState([]);
 
     useEffect(   () =>  {
-        fetch("http://localhost:5000/all-furniture").then(res => res.json()).then( data => setFurniture(data))
+        fetch("http://localhost:5000/all-furniture").then(res => res.json()).then( data => setFurniture(data.slice(0,7)))
     } ,[])
   return (
     <div>
@@ -14,4 +14,4 @@ const FavouriteFurnitures = () => {
   )
 }
 
-export default FavouriteFurnitures
+export default BestSellingFurnitures

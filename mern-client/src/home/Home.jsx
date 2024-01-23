@@ -1,12 +1,14 @@
 import React from "react";
 import Banner from "../components/Banner";
-import FavouriteFurnitures from "./FavouriteFurnitures";
+import BestSellingFurnitures from "./BestSellingFurnitures";
+import FavFurniture from "./FavFurniture";
 
 const Home = () => {
     return (
         <div className=''>
            <Banner/>
-           <FavouriteFurnitures/>
+           <BestSellingFurnitures/>
+           <FavFurniture/>
         </div>
 
     )

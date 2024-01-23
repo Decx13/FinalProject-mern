@@ -22,7 +22,7 @@ const FurnitureCards = ({headline, furniture}) => {
       <h2 className='text-5xl font-bold text-center text-black my-10'>{headline}</h2>
 
       {/* cards */}
-      <div>
+      <div className='mt-12'>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
