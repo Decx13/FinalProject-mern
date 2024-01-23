@@ -72,10 +72,10 @@ const Navbar = () => {
             </div>
 
             {/*  navbar items for sm devices */}
-            <div className={`space-y-4 px-4 mt-12 py-7 bg-gray-700 ${isMenuOpen ? "block fixed top-0 right-0 left-0" :"hidden"}`}>
+            <div className={`space-y-4 px-4 mt-16 py-7 bg-amber-600 ${isMenuOpen ? "block fixed top-0 right-0 left-0" :"hidden"}`}>
                 {
-                   navItems.map( ({link,path})  => <Link key={path} className='block text-base 
-                   text-white uppercase curser-pointer'>{link}</Link> ) 
+                   navItems.map( ({link,path})  => <Link key={path} className='block text-1xl 
+                   text-white font-semibold uppercase curser-pointer hover:text-black'>{link}</Link> ) 
                 }
             </div>
         </nav>
