@@ -42,7 +42,7 @@ const CustomerReviews = () => {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="mySwiper2"
       >
         <SwiperSlide className='shadow-2xl bg-white py-8 px-4 md:m-5 rounded-lg border'>
             <div className='space-y-6'>

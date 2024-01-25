@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
+
 //imposrt react icons
 import { FaBarsStaggered, FaCouch, FaXmark } from "react-icons/fa6";
 
@@ -33,6 +34,7 @@ const Navbar = () => {
     // navbar items
 
     const navItems = [
+    
         {link: "Home", path: "/"},
         {link: "About", path: "/about"},
         {link: "Shop", path: "/shop"},

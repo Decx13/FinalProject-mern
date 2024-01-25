@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-// import './styles.css';
+
 
 // import required modules
 import { Pagination } from 'swiper/modules';
@@ -46,7 +46,7 @@ const FurnitureCards = ({headline, furniture}) => {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper w-full h-full"
+        className="mySwiper1 w-full h-full"
         >
           
           {
@@ -71,8 +71,7 @@ const FurnitureCards = ({headline, furniture}) => {
                     
                   </div>
               </Link>
-            </SwiperSlide>
-            )
+            </SwiperSlide>)
   
           }
        
