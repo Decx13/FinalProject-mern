@@ -4,6 +4,7 @@ import BestSellingFurnitures from "./BestSellingFurnitures";
 import FavFurniture from "./FavFurniture";
 import PromotionArea from "./PromotionArea";
 import OtherFurniture from "./OtherFurniture";
+import CustomerReviews from "./CustomerReviews";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
            <FavFurniture/>
            <PromotionArea/>
            <OtherFurniture/>
+           <CustomerReviews/>
         </div>
 
     )

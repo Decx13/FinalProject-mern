@@ -22,7 +22,9 @@ const FurnitureCards = ({headline, furniture}) => {
       <h2 className='text-5xl font-bold text-center text-black my-10'>{headline}</h2>
 
       {/* cards */}
+      
       <div className='mt-12'>
+        
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -45,33 +47,36 @@ const FurnitureCards = ({headline, furniture}) => {
         }}
         modules={[Pagination]}
         className="mySwiper w-full h-full"
-      >
-        
-        {
-          furniture.map(furniture => <SwiperSlide key={furniture.id}>
-            <Link to={`/furniture/${furniture._id}`}>
-                <div className='relative'>
-                  <img src={furniture.imageUrl} alt=""/>
-                  <div className='absolute top-3 right-3 bg-amber-600 hover:bg-black p-2 rounded ' >
-                    <FaCartShopping className='w-8 h-8 text-white'/>
+        >
+          
+          {
+            furniture.map(furniture => <SwiperSlide key={furniture.id}>
+              <Link to={`/furniture/${furniture._id}`}>
+                  <div className='relative'>
+                    <img src={furniture.imageUrl} alt=""/>
+                    <div className='absolute top-3 right-3 bg-amber-600 hover:bg-black p-2 rounded ' >
+                      <FaCartShopping className='w-8 h-8 text-white'/>
+                    </div>
                   </div>
-                </div>
-                <div>
-                    <div>
-                      <h3>{furniture.furnitureName}</h3>
-                      <p>{furniture.styleTitle}</p>
-                    </div>
-
-                    <div>
-                      <p>12000/=</p>
-                    </div>
-
-                  
-                </div>
-            </Link>
-          </SwiperSlide>)
-
-        }
+                  <div>
+                      <div>
+                        <h3>{furniture.furnitureName}</h3>
+                        <p>{furniture.styleTitle}</p>
+                      </div>
+  
+                      <div>
+                        <p>12000/=</p>
+                      </div>
+  
+                    
+                  </div>
+              </Link>
+            </SwiperSlide>
+            )
+  
+          }
+       
+       
       </Swiper>
 
       </div>
