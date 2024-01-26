@@ -8,6 +8,20 @@ useEffect( () =>{
   fetch("http://localhost:5000/all-furniture").then(res => res.json()).then(data => setAllFurniture(data));
 },[])
 
+
+ // delete a book
+  const handleDelete = (id) =>{
+    console.log(id);
+
+    fetch(`http://localhost:5000/furniture/${id}`,{
+      method: "DELETE",
+    }).then(res => res.json()).then(data => {
+    alert ("Furniture Deleted!")
+    //setAllFurniture(data);
+  })
+
+}
+
   return (
     <div className='px-4 my-12'>
       <h2 className='mb-8 text-3xl font-bold'>Manage Furniture</h2>
@@ -38,12 +52,11 @@ useEffect( () =>{
 
             <Table.Cell>
               <Link 
-              className="font-medium text-cyan-600 hover:underline dark:text-cyan-500" 
+              className="font-medium text-cyan-600 hover:underline dark:text-cyan-500 mr-5" 
               to={`/admin/dashboard/edit-furniture/${furniture._id}`}>
-              <p>
                 Manage
-              </p>
               </Link>
+              <button onClick={() => handleDelete(furniture._id)} className='bg-red-600 px-4 py-1 font-semibold text-white rounded-sm hover:bg-sky-600'>Delete</button>
             </Table.Cell>
           </Table.Row>
             </Table.Body> )
