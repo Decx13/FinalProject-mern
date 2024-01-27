@@ -35,7 +35,7 @@ const EditFurniture = () => {
     const category = form.category.value;
     const furnitureDescription = form.furnitureDescription.value;
     
-    const furnitureObject = {
+    const furnitureUpdateObject = {
       furnitureName,styleTitle,imageUrl,category,furnitureDescription
     }
 
@@ -43,10 +43,14 @@ const EditFurniture = () => {
     // update database
     fetch(`http://localhost:5000/furniture/${id}`,{
       method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(furnitureUpdateObject)
     }).then(res => res.json()).then(data => {
       // console.log(data)
       alert("Furniture Updated Successfully!")
-      form.reset();
+      
 
     })
   }
