@@ -36,6 +36,9 @@ async function run() {
     //create a collection for database
 
     const furnitureCollections = client.db("furnitureInventory").collection("furniture");
+    const registerCollections = client.db("furnitureInventory").collection("register");
+    const adminCollections = client.db("furnitureInventory").collection("admin");
+
 
     //insert a new furniture (do post)
 
@@ -45,6 +48,45 @@ async function run() {
       res.send(result);
     })
 
+    //insert users to db
+    app.post("/upload-user",async(req, res) => {
+      const data = req.body;
+      const result = await registerCollections.insertOne(data);
+      res.send(result);
+    })
+
+    
+
+    //login customer
+    app.post("/login",async(req, res) => {
+      const {email, password} = req.body;
+      // registerCollections.findOne({email: email})
+      //  .then(user => {
+      //    if(user){
+      //      if(user.password=== password){
+      //        res.json("success")
+      //     } else {
+      //        res.json("sorry the password is incorrect!")
+      //     }
+      //    }else{
+      //     res.json("no record existed!")
+      //    }
+      //  })
+      //const filter = { password: new ObjectId(id)};
+      registerCollections.findOne({email: email})
+      .then(user => {
+        if(user){
+          if(user.password=== password){
+            res.json("success")
+         } else {
+            res.json("sorry the password is incorrect!")
+         }
+        }else{
+         res.json("no record existed!")
+        }
+      })
+    })
+   
     //get all furniture from database(get)
 
     app.get("/all-furniture", async(req, res) => {

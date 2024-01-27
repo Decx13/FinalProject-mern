@@ -6,10 +6,10 @@ import userImg from "../assets/otherimages/propic.jpg"
 
 const SideBar = () => {
   return (
-    <div>
+    <div className='h-[750px] bg-black'>
         <Sidebar aria-label="Sidebar with content separator example">
-        <Sidebar.Logo href="#" img={userImg} imgAlt="Flowbite logo">
-        Flowbite
+        <Sidebar.Logo href="#" img={userImg} imgAlt="logo">
+        Admin
       </Sidebar.Logo>
 
       <Sidebar.Items>
@@ -28,29 +28,15 @@ const SideBar = () => {
             Manage Furniture
           </Sidebar.Item>
 
-          <Sidebar.Item href="#" icon={HiUser}>
-            Users
+          <Sidebar.Item href="/sign-up" icon={HiUser}>
+            Add Admins
           </Sidebar.Item>
 
-          <Sidebar.Item href="#" icon={HiShoppingBag}>
-            Products
-          </Sidebar.Item>
-
-          <Sidebar.Item href="/login" icon={HiArrowSmRight}>
-            Log In
-          </Sidebar.Item>
-
-          <Sidebar.Item href="/logout" icon={HiTable}>
+          <Sidebar.Item href="/" icon={HiTable}>
             Log Out
           </Sidebar.Item>
         </Sidebar.ItemGroup>
         <Sidebar.ItemGroup>
-          <Sidebar.Item href="#" icon={HiChartPie}>
-            Upgrade to Pro
-          </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiViewBoards}>
-            Documentation
-          </Sidebar.Item>
           <Sidebar.Item href="#" icon={BiBuoy}>
             Help
           </Sidebar.Item>

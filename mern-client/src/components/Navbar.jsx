@@ -34,12 +34,36 @@ const Navbar = () => {
     // navbar items
 
     const navItems = [
-    
-        {link: "Home", path: "/"},
-        {link: "About", path: "/about"},
-        {link: "Shop", path: "/shop"},
-        {link: "Your Products", path: "/admin/dashboard"},
-        {link: "Blog", path: "/blog"}
+        {
+            id: 1,
+            title:  "Home",
+            path: '/',
+        },
+        {
+            id: 2,
+            title: "About",
+            path: '/about',
+        },
+        {
+            id: 3,
+            title: "Shop",
+            path: '/shop',
+        },
+        {
+            id: 4,
+            title: "Admin Area",
+            path: '/login',
+        },
+        {
+             id: 5,
+           title: "Contact US",
+            path: '/contact',
+        }
+        // {link: "Home", path: "/"},
+        // // {link: "About", path: "/about"},
+        // {link: "Shop", path: "/shop"},
+        // {link: "Your Products", path: "/admin/dashboard"},
+        // {link: "Blog", path: "/blog"}
     ]
   return (
     <header className='w-full bg-transparent fixed top-0 right-0 left-0 transition-all ease-in duration-300'>
@@ -51,11 +75,20 @@ const Navbar = () => {
 
                 {/* navbar items for large devices */}
                 <ul className='md:flex space-x-12 hidden'>
-
                     {
+                    navItems.map((item) => (
+                       
+                            <Link className='block text-base text-bold text-black uppercase curser-pointer
+                             hover:text-amber-600' to={item.path}>{item.title}</Link>
+                       
+                     ))
+                     
+                     }
+
+                    {/* {
                         navItems.map( ({link,path})  => <Link key={path} className='block text-base 
                         text-black uppercase curser-pointer hover:text-amber-600'>{link}</Link> )
-                    }
+                    } */}
                 </ul>
 
                 {/* btn for large devices */}
@@ -77,8 +110,16 @@ const Navbar = () => {
             {/*  navbar items for sm devices */}
             <div className={`space-y-4 px-4 mt-16 py-7 bg-amber-600 ${isMenuOpen ? "block fixed top-0 right-0 left-0" :"hidden"}`}>
                 {
-                   navItems.map( ({link,path})  => <Link key={path} className='block text-1xl 
-                   text-white font-semibold uppercase curser-pointer hover:text-black'>{link}</Link> ) 
+                //    navItems.map( ({link,path})  => <Link key={path} className='block text-1xl 
+                //    text-white font-semibold uppercase curser-pointer hover:text-black'>{link}</Link> ) 
+
+                navItems.map((item) => (
+                    
+                        <Link className='block text-1xl text-white font-semibold uppercase curser-pointer
+                         hover:text-black' to={item.path}>{item.title}</Link>
+                   
+                 ))
+
                 }
             </div>
         </nav>

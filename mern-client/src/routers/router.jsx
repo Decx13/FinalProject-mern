@@ -16,6 +16,9 @@ import DashBoardImplement from "../dashboard/DashBoardImplement";
 import UploadFurniture from "../dashboard/UploadFurniture";
 import ManageFurniture from "../dashboard/ManageFurniture";
 import EditFurniture from "../dashboard/EditFurniture";
+import SignUp from "../components/SignUp";
+import Login from "../components/Login";
+
 
 const router = createBrowserRouter([
   {
@@ -71,6 +74,15 @@ const router = createBrowserRouter([
       }
 
     ]
+  },
+
+  {
+    path: "sign-up",
+    element: <SignUp/>
+  },
+  {
+    path: "login",
+    element: <Login/>
   }
 ]);
 
