@@ -129,7 +129,7 @@ const EditFurniture = () => {
       <div>
       <div className="mb-2 block">
           <Label htmlFor="furnitureDescription" 
-          value="Furniture Description" />
+          value="Furniture Description & Prices" />
         </div>
         <Textarea 
         id="furnitureDescription" 

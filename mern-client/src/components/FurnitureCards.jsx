@@ -65,7 +65,7 @@ const FurnitureCards = ({headline, furniture}) => {
                       </div>
   
                       <div>
-                        <p>12000/=</p>
+                        <p>{furniture.furnitureDescription}</p>
                       </div>
   
                     

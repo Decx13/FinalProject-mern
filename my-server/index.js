@@ -14,8 +14,6 @@ app.get('/', (req, res) => {
 })
 
 //mongodb-config
-
-
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = "mongodb+srv://mithila22:yeUllKOIuPpIU1ku@cluster0.gvn92wg.mongodb.net/?retryWrites=true&w=majority";
 

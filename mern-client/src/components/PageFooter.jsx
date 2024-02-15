@@ -22,7 +22,7 @@ const PageFooter = () => {
                     <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
                 </li>
                 <li>
-                    <a href="/contact" class="hover:underline">Contact</a>
+                    <a href="#" class="hover:underline">Contact</a>
                 </li>
             </ul>
         </div>
