@@ -11,11 +11,11 @@ const Shop = () => {
   },[])
   return (
     <div className='mt-28 px-4 lg:px-24'>
-        <h2 className='text-5xl font-bold text-center'>All Furniture are here</h2>
+        <h2 className='text-5xl font-bold text-center p-4'>Grab Anything You Want From Here</h2>
 
         <div className='grid gap-8 my-12 lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1'>
           {
-             furniture.map(furniture =>   <Card
+             furniture.map(furniture =>   <Card className='mb-8'
             >
               <Link to={`/furniture/${furniture._id}`}>
                   <div className='relative'>
