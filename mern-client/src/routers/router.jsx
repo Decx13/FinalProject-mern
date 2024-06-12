@@ -18,6 +18,7 @@ import ManageFurniture from "../dashboard/ManageFurniture";
 import EditFurniture from "../dashboard/EditFurniture";
 import SignUp from "../components/SignUp";
 import Login from "../components/Login";
+import Contact from "../components/Contact";
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog/>
+      },
+      {
+        path:"/contact",
+        element: <Contact/>
+
       },
       {
         path: "/furniture/:id",
