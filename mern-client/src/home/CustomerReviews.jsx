@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import {FaStar} from "react-icons/fa6"
 import { Avatar } from 'flowbite-react';
-import propic from "../assets/otherimages/propic.jpg"
+import propic from "../assets/otherimages/iconpro.png"
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -14,6 +14,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import { Profiler } from 'react';
 
 const CustomerReviews = () => {
   return (
@@ -55,18 +56,16 @@ const CustomerReviews = () => {
                 </div>
 
                     <div className='mt-7'>
-                        <p className='mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
-                            laudantium repudiandae voluptates ex architecto 
-                            magnam nisi doloremque sed quos alias mollitia incidunt odio,
-                             aperiam voluptatibus quis vitae nam nobis eum!</p>
+                        <p className='mb-5'>"Bought a set of wooden chairs and they are perfect. Comfortable, durable, and elegant. The buying process was smooth and the team was very friendly."
+                        </p>
 
                              <Avatar className='w-10 mb-4 ' 
-                             img={propic} 
+                             img={propic}
                              alt="avatar of Jese"
                              rounded />
 
-                             <h5 className='text-lg font-medium'>Mark ping</h5>
-                             <p className='text-base '>CEO,ABC Company</p>
+                             <h5 className='text-lg font-medium'>Kasun Tharanga</h5>
+                             <p className='text-base '>System Administrator, UnionApperal</p>
                     </div>
             </div>
         </SwiperSlide>
@@ -82,18 +81,18 @@ const CustomerReviews = () => {
                 </div>
 
                     <div className='mt-7'>
-                        <p className='mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
-                            laudantium repudiandae voluptates ex architecto 
-                            magnam nisi doloremque sed quos alias mollitia incidunt odio,
-                             aperiam voluptatibus quis vitae nam nobis eum!</p>
+                        <p className='mb-5'>"Love my new coffee table! It's well-built and looks fantastic in my living room. The staff were helpful and delivery was prompt."
+
+
+                        </p>
 
                              <Avatar className='w-10 mb-4 ' 
                              img={propic} 
                              alt="avatar of Jese"
                              rounded />
 
-                             <h5 className='text-lg font-medium'>Mark ping</h5>
-                             <p className='text-base '>CEO,ABC Company</p>
+                             <h5 className='text-lg font-medium'>Danuja Fernando</h5>
+                             <p className='text-base '>IT Assistant</p>
                     </div>
             </div>
         </SwiperSlide>
@@ -109,18 +108,15 @@ const CustomerReviews = () => {
                 </div>
 
                     <div className='mt-7'>
-                        <p className='mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
-                            laudantium repudiandae voluptates ex architecto 
-                            magnam nisi doloremque sed quos alias mollitia incidunt odio,
-                             aperiam voluptatibus quis vitae nam nobis eum!</p>
+                        <p className='mb-5'>"My new wooden desk from Liyanage Furniture House is fantastic. Solid construction and elegant design. The whole experience was seamless from order to delivery. Very satisfied!"</p>
 
                              <Avatar className='w-10 mb-4 ' 
                              img={propic} 
                              alt="avatar of Jese"
                              rounded />
 
-                             <h5 className='text-lg font-medium'>Mark ping</h5>
-                             <p className='text-base '>CEO,ABC Company</p>
+                             <h5 className='text-lg font-medium'>Priyanga Ranadeva</h5>
+                             <p className='text-base '>Group Manager</p>
                     </div>
             </div>
         </SwiperSlide>
@@ -136,18 +132,17 @@ const CustomerReviews = () => {
                 </div>
 
                     <div className='mt-7'>
-                        <p className='mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
-                            laudantium repudiandae voluptates ex architecto 
-                            magnam nisi doloremque sed quos alias mollitia incidunt odio,
-                             aperiam voluptatibus quis vitae nam nobis eum!</p>
+                        <p className='mb-5'>"I'm thrilled with my new desk. It's beautifully crafted and incredibly sturdy. The delivery was fast and the team was very professional."
+
+</p>
 
                              <Avatar className='w-10 mb-4 ' 
                              img={propic} 
                              alt="avatar of Jese"
                              rounded />
 
-                             <h5 className='text-lg font-medium'>Mark ping</h5>
-                             <p className='text-base '>CEO,ABC Company</p>
+                             <h5 className='text-lg font-medium'>Budhdhika Chathuranga</h5>
+                             <p className='text-base '>Lectra Designer</p>
                     </div>
             </div>
         </SwiperSlide>
@@ -163,18 +158,15 @@ const CustomerReviews = () => {
                 </div>
 
                     <div className='mt-7'>
-                        <p className='mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
-                            laudantium repudiandae voluptates ex architecto 
-                            magnam nisi doloremque sed quos alias mollitia incidunt odio,
-                             aperiam voluptatibus quis vitae nam nobis eum!</p>
+                        <p className='mb-5'>"The coffee table I bought is beautiful and extremely well-made. The craftsmanship is evident in every detail. The staff was very helpful and made the entire purchasing process a breeze. Delivery was quick and the table arrived in perfect condition. Highly recommend this shop for quality wood furniture!"</p>
 
                              <Avatar className='w-10 mb-4 ' 
                              img={propic} 
                              alt="avatar of Jese"
                              rounded />
 
-                             <h5 className='text-lg font-medium'>Mark ping</h5>
-                             <p className='text-base '>CEO,ABC Company</p>
+                             <h5 className='text-lg font-medium'>Manori Kurera</h5>
+                             <p className='text-base '>Marketing Manager</p>
                     </div>
             </div>
         </SwiperSlide>
